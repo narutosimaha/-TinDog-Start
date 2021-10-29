@@ -1,31 +1,64 @@
 body {
+  text-align: center;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
-}
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
-.container-fluid {
-  padding: 3% 15%;
 }
 
-h1 {
-  font-family: "Montserrat", sans-serif;
+.big-heading {
   font-weight: 900;
   font-size: 3.5rem;
   line-height: 1.5;
 }
-h2 {
-  font-family: "Montserrat", sans-serif;
+.section-heading {
   font-weight: 600;
   font-size: 3rem;
   line-height: 1.5;
 }
-h3 {
-  font-family: "Montserrat", sans-serif;
+.specific-heading {
   font-weight: 900;
   font-size: 1.5rem;
 }
+.container-fluid {
+  padding: 7% 15%;
+}
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+.white-section {
+  background-color: #fff;
+}
+/*============Begin title section================= */
+
+/* General */
+
+#title .container-fluid {
+  padding: 3% 15% 10% 15%;
+  text-align: left;
+}
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .title-image {
+    position: static;
+    transform: rotate(0deg);
+  }
+  #title {
+    text-align: center;
+  }
+}
+
 /* Navbar configuration */
 .navbar {
   padding-bottom: 4.5rem;
@@ -43,29 +76,23 @@ h3 {
   font-family: "Montserrat";
   font-weight: 400;
 }
-
 /* Download button */
 .download-btn {
   margin: 5% 3% 5% 0;
 }
 
-/* Title image */
-.title-image {
-  width: 60%;
-  transform: rotate(25deg);
-}
+/*============End title section================= */
 
-/* -- Feature configure -- */
+/*============Begin Features section================= */
 #features p {
   color: #8f8f8f;
 }
 
 #features {
-  padding: 7% 15%;
+  position: relative;
 }
 
 .feature-box {
-  text-align: center;
   padding: 5%;
 }
 .icon {
@@ -76,11 +103,11 @@ h3 {
   color: #ff4c68;
 }
 
-/* Testimonials */
+/*============End Features section================= */
+
+/*=============Begin Testimonials Section========== */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 .testimonial-image {
   width: 10%;
@@ -88,15 +115,34 @@ h3 {
   margin: 20px;
 }
 
+/*=============End Testimonials Section========== */
+
+/*=============Begin Press Section========== */
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
-.carousel-item {
-  padding: 7% 17%;
+/*=============End Press Section========== */
+
+/*=============Begin Pricing Section========== */
+.pricing-col {
+  padding: 3% 2%;
+}
+/*=============End Pricing Section========== */
+
+/*=============Begin Cta Section========== */
+
+/* footer */
+#footer {
+  padding-top: 7%;
+  padding-bottom: 1%;
+}
+/*=============End Cta Section========== */
+
+.footer-icon {
+  margin: 0 10px 25px 10px;
 }
